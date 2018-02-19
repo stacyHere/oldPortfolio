@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Stacy Killinger</title>
+</head>
+<body>
+    <!-- Modal content -->
+  <div class="modal" id="modal">
+    <div class="modal-content slideDown">
+      <button class="close" id="closeModal">X</button>
+      <form action="https://formspree.io/stacykillinger@gmail.com" id="form">
+         <h1 id="h1">Contact Form</h1>
+        <div class="items">
+        <div class="control">
+          <label for="name" class="holder">Name</label>
+          <input type="text" id="name" name="name" tabindex="1" required/>
+        </div>
+        <div class="control">
+          <label class="holder">Email</label>
+          <input type="email" id="email" name="email" tabindex="2" required/>
+        </div>
+        <div class="control">
+          <label class="holder">Message</label>
+          <input type="text" id="message" name="message" tabindex="3" required/>
+        </div>
+        </div>
+        <button class="submit" id="submit" type="submit">Send</button>
+         <h1 id="success">Thanks, I will get back to you soon.</h1>
+      </form>
+    </div>
+    <div class="modal-content slideDown"></div>
+  </div>
+
+<div class="wrapper">
+  <header>
+    <div class="buttonContainer" id="menu">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <nav>
+      <ul class="nav" id="nav">
+        <li><a href="#about" class="link" title="About">About</a></li>
+        <li><a href="#projects" class="link" title="Projects">Projects</a></li>
+        <li><a href="#modal" class="link" title="Contact" id="contactMini">Contact</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#modal" id="contactMe" class="link" title="Contact Form">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1 id="about" class="welcome">Hi, <br> I'm Stacy, <br> a front-end developer. <br>Welcome to my portfolio. </h1>
+  <div id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="grid-card">
+        <p class="card-info">Vanilla JavaScript is used to play the classic Simon game. This was the final project created for Free Code Camp's Front End
+          Development Certificate. Strict mode increases the difficulty by restarting when a pattern is incorrect and increasing speed on the 5th,
+          9th, and 13th rounds. The game is won after 20 rounds.
+          <br>
+          <a href="https://codepen.io/stacyHere/full/bazowd/" target="_blank">Open in CodePen</a>
+        </p>
+        <img src="crop/Screenshot-2018-1-30 Simon Game.png" alt="">
+        <div class="card-line"></div>
+        <h2 class="card-title">Simon Game</h2>
+      </div>
+      <div class="grid-card">
+        <p class="card-info">This Tic Tac Toe game was a project for Free Code Camp. Vanilla JavaScript is used to play against the computer.
+          <br>
+          <a href="https://codepen.io/stacyHere/full/mBOOKO" target="_blank">Open in CodePen</a>
+        </p>
+        <img src="crop/Screenshot-2018-1-5 Tic Tac Toe.png" alt="">
+        <div class="card-line"></div>
+        <h2 class="card-title">Tic Tac Toe</h2>
+      </div>
+      <div class="grid-card">
+        <p class="card-info">Free Code Camp project that displays the weather from the Open Weather Map API. The weather is based on IP address
+          and the city can be changed by entering a different zip code. Temperature can toggle between Fahrenheit and Celsius when clicked.
+          jQuery is used for interaction.
+          <br>
+          <a href="https://codepen.io/stacyHere/pen/XdWXLd" target="_blank">Open in CodePen</a>
+        </p>
+        <img src="crop/Screenshot-2018-1-5 Local Weather.png" alt="">
+        <div class="card-line"></div>
+        <h2 class="card-title">Local Weather</h2>
+      </div>
+      <div class="grid-card">
+        <p class="card-info">Pomodoro Clock project for Free Code Camp using jQuery. The work and break time can be changed, paused and reset. An alarm
+          will sound when the count down clock reaches 0.
+          <br>
+          <a href="https://codepen.io/stacyHere/pen/EPGJjO" target="_blank">Open in CodePen</a>
+        </p>
+        <img src="crop/Screenshot-2018-1-5 Pomodoro Clock.png" alt="">
+        <div class="card-line"></div>
+        <h2 class="card-title">Pomodoro Clock</h2>
+      </div>
+      <div class="grid-card">
+        <p class="card-info">Recreated website in Umbraco CMS. I had guidance while coding this entire website using both
+           JavaScript and C#.
+          <br>
+          <a href="http://fritztile.com/" target="_blank">Open in browser.</a>
+        </p>
+        <img src="crop/Screenshot-2018-1-5 Fritztile - Flexible Terrazzo Tile.png" alt="">
+        <div class="card-line"></div>
+        <h2 class="card-title">Intern Project</h2>
+      </div>
+      <div class="grid-card">
+        <p class="card-info">Recreated website in Umbraco CMS. I had guidance while coding this entire website using both
+           JavaScript and C#.
+          <br>
+          <a href="http://expanko.com" target="_blank">Open in browser.</a>
+        </p>
+        <img src="crop/Screenshot-2018-1-5 Welcome to Expanko - Resilient Flooring.png" alt="">
+        <div class="card-line"></div>
+        <h2 class="card-title">Intern Project</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="scripts.js"></script>
+
+</body>
+</html>
